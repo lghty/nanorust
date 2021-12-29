@@ -1,0 +1,17 @@
+[package]
+name = "nanorust"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+longan-nano = { version = "0.3.0", features = ["lcd", "sdcard"] }
+riscv-rt = "0.8.0"
+panic-halt = "0.2.0"
+embedded-graphics = "0.7.1"
+ushell = "0.3.5"
+heapless = "0.7.9"
+rand_chacha = { version = "0.3.1", default-features = false, features = [] }
+
+hashes = { path = "hashes" }
