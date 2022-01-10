@@ -4,6 +4,8 @@ version = "0.1.0"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[features]
+verify = []
 
 [dependencies]
 longan-nano = { version = "0.3.0", features = ["lcd", "sdcard"] }
@@ -14,4 +16,5 @@ ushell = "0.3.5"
 heapless = "0.7.9"
 rand_chacha = { version = "0.3.1", default-features = false, features = [] }
 
+ec = { path = "ec" }
 hashes = { path = "hashes" }

@@ -1,0 +1,14 @@
+[package]
+name = "ec"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+verify = []
+
+[dependencies]
+# uncomment when testing/implementing constant-time functions
+#subtle = { version = "2.4.1", default-features = false, features = [] }
+
+[dev-dependencies]
+rand = { version = "0.8.4", features = ["std"] }
